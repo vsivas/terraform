@@ -3,7 +3,7 @@ provider "aws" {
     region = "us-east-1"
 }
 
-resource "aws_instance" "ec2-1" {
+/*resource "aws_instance" "ec2-1" {
   ami = var.ami
   instance_type = var.instance_type
 }
@@ -21,5 +21,5 @@ resource "aws_security_group" "example" {
     protocol    = "tcp"
     cidr_blocks = var.environment == "production" ? [var.production_cidr] : [var.development_cidr]
   }
-}
+}*/
 
