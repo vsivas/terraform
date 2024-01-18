@@ -11,5 +11,4 @@ security_group_id = "sg-674d9035"
 
 module "aws_s3_bucket" {
   source = "./modules/s3bucket"
-  
 }
