@@ -8,3 +8,8 @@ module "ec2_instance" {
 ami = "ami-0005e0cfe09cc9050"
 security_group_id = "sg-674d9035"
 }
+
+module "aws_s3_bucket" {
+  source = "./modules/s3bucket"
+  
+}
