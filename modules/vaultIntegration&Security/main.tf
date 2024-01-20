@@ -1,6 +1,7 @@
 provider "aws" {
   region = "us-east-1"
 }
+#Before running Vault , data and tags(in ec2) we have to create vault instance as per vault-integration.md 
 provider "vault" {
   address = "http://54.237.150.10:8200"
   skip_child_token = true
